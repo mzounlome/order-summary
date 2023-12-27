@@ -7,7 +7,7 @@ interface OrderProps {}
 
 const Order: FC<OrderProps> = () => {
   return (
-    <div className=" w-5/6 h-96 bg-white rounded-b-lg p-4 flex flex-col items-center justify-evenly">
+    <div className=" w-5/6 h-96 bg-white desktop:w-2/6 rounded-b-lg p-4 flex flex-col items-center justify-evenly tablet:w-4/6">
       <h1 className="text-2xl text-gray-700 font-bold">Order Summary</h1>
       <p className="text-gray-400 text-sm  px-16 text-center">
         You can now listen to millions of songs, audiobooks and podcasts on any
@@ -17,7 +17,7 @@ const Order: FC<OrderProps> = () => {
         <div className="h-12 w-12 bg-indigo-100 rounded-full  relative">
           <Image src={note} alt="note" layout="fill" objectFit="conatainer" />
         </div>
-        <div className="w-28 h-full  flex flex-col justify-center mr-20">
+        <div className="w-28 h-full  flex flex-col justify-center mr-20 tablet:mr-0">
           <p className="text-black"> Annual Plan</p>
           <p className="text-gray-400"> $59.99/year</p>
         </div>
